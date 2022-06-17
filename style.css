@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Kaushan+Script&family=Lobster&family=Merriweather:wght@300&family=Open+Sans&family=Patrick+Hand&family=Poppins:wght@600&family=Raleway&display=swap');
+:root {
+	--pink: hsl(322, 100%, 66%);
+	--very-pale-cyan: hsl(193, 100%, 96%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--grayish-blue: hsl(208, 11%, 55%);
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+	font-family: 'Poppins', sans-serif;
+}
+#header {
+	background-color: var(--very-pale-cyan);
+}
+#nav {
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-btn {
+	background-color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 0 30px;
+}
+.nav-btn:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.banner-btn {
+	background-color: var(--pink);
+	border: none;
+	border-radius: 20px;
+	width: 70%;
+	color: white;
+	padding: 10px;
+}
+.banner-btn:hover {
+	filter: brightness(150%);
+}
+section img {
+	height: auto;
+	width: 100%;
+}
+
+#grow-together {
+	padding: 30px;
+}
+.grow-together, .flowing-convo, .your-users {
+	border-radius: 30px;
+}
+.grow-together h2, .flowing-convo h2, .your-users h2 {
+	color: var(--very-dark-cyan);
+}
+.grow-together p, .flowing-convo p, .your-users p {
+	color: var(--grayish-blue);
+}
+#cta {
+	display: flex;
+	justify-content: center ;
+}
+.cta-wrapper {
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: -100px;
+	z-index: 3;
+}
+.cta-wrapper h3 {
+	padding-bottom: 20px;
+}
+
+
+#footer {
+	background-color: var(--very-dark-cyan);
+	padding: 150px 20px 30px 20px;
+	position: relative;
+}
+.f-item-content {
+	display: flex;
+}
+.f-item-content img {
+	height: 100%;
+	padding-right: 20px;
+}
+.footer-item p {
+	color: white;
+}
+.f-links a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 5px 0;
+}
+.f-links a:hover {
+	text-decoration: underline;
+}
+.f-socials {
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0;
+}
+.f-socials a {
+	margin: 0 5px;
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 50%;
+}
+.f-socials a:hover {
+	color: var(--pink);
+	border: 1px solid var(--pink);
+}
+.footer-bottom {
+	color: white;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+	#header {
+		background-image: url('images/bg-hero-mobile.svg');
+	}
+	#banner {
+		padding-top: 50px;
+	}
+	#banner p{
+		padding: 20px 50px;
+	}
+	.banner-text {
+		text-align: center;
+	}
+	.banner-image  {
+		padding: 50px;
+	}
+	.grow-together, .flowing-convo, .your-users {
+		text-align: center;
+		padding: 30px;
+
+	}
+	.text {
+		padding-top: 50px;
+	}
+	#grow-together, #flowing-conversation, #your-users {
+		padding: 30px;
+	}
+
+	#cta {
+		padding: 20px;
+	}
+	.cta-wrapper {
+		padding: 30px 10px;
+		text-align: center;
+		
+	}
+
+	.f-link1 {
+		padding-top: 30px;
+	}
+	
+}
+@media screen and (min-width: 768px) {
+	#header {
+		background-image: url('images/bg-hero-desktop.svg');
+	}
+	#nav {
+		padding: 50px 100px;
+	}
+
+	#banner {
+		display: flex;
+		padding: 50px 100px;
+	}
+	.banner-text {
+		padding-right: 50px;
+		width: 45%;
+		margin-top: 7%;
+	}
+	.banner-image {
+		width: 55%;
+	}
+
+	#grow-together {
+		padding: 50px 100px 20px 100px;
+	}
+	.text {
+		align-self: center;
+	}
+	.grow-together {
+		display: flex;
+		padding: 50px;
+		flex-direction: row-reverse;
+	}
+	.grow-together-text {
+		align-self: center;
+		justify-self: left;
+		padding: 0 50px;
+	}
+	.grow-together-image {
+		width: 70%;
+	}
+	.text p {
+		width: 65%;
+	}
+	
+	
+	#flowing-conversation {
+		padding: 20px 100px;
+	}
+	.flowing-convo {
+		display: flex;
+		padding: 50px 0 50px 100px;
+	}
+	.flowing-convo-image {
+		width: 70%;
+	}
+	.flowing-convo-text {
+		padding-left: 150px;
+	
+	}
+	.flowing-convo-text p {
+		width: 80%;
+	}
+
+
+	#your-users {
+		padding: 20px 100px 100px 100px;
+	}
+	.your-users {
+		display: flex;
+		padding: 50px;
+		flex-direction: row-reverse;
+	}
+	.your-users-text {
+		padding: 0 50px;
+	}
+	.your-users-image {
+		width: 70%;
+	}
+
+
+	#cta {
+		display: flex;
+		justify-content: center ;
+	}
+	.cta-wrapper {
+		width: 40%;
+		text-align: center;
+		padding: 50px;
+	}
+
+	#footer {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.footer-wrapper {
+		display: flex;
+		align-items: center;	
+	}
+	.footer-item {
+		width: 25%;
+	}
+	.f-links, .f-socials {
+		
+	}
+	.f-link1 {
+		padding-left: 100px;
+	}
+	.f-socials {
+		text-align: left;
+	}
+}
